@@ -1,0 +1,113 @@
+@media (min-width: 1024px) {
+  .product-card img {
+    /* max-width: 100% ; */
+    height: auto;
+    
+  }
+  .modal.open {
+    
+    text-align: center;
+    width: 100%;
+    /* max-width: px; */
+  }
+  .modal.open img {
+    
+    max-width: 320px;
+  }
+}
+/* Estilos para el producto */
+.product-card {
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center ;
+  cursor: pointer;
+  max-width:250px;
+  /* padding: 15px; */
+  /* Añade cualquier estilo adicional necesario */
+}
+
+.product-card .img-product {
+  max-width:300px !important;
+  height: 300px !important;
+  
+}
+
+.product-card h4 {
+  margin-top: 10px; /* Agrega un pequeño margen superior al título */
+  text-align: center;
+}
+
+/* Estilos para el modal */
+.modal {
+  display: none; /* El modal está oculto inicialmente */
+  /* position: fixed; */
+
+  position: absolute;
+  transform: translate(-50%, -50%); /* Centra el modal exactamente en el centro */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semi-transparente para el modal */
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 9999; /* Asegura que el modal esté en la parte superior */
+}
+
+/* Estilos para el modal cuando está abierto */
+.modal.open {
+  display: block;
+  top: 50%; 
+  left: 50%; 
+}
+
+/* Estilos para el contenido dentro del modal */
+.modal div {
+  background-color: #fff; /* Fondo blanco para el contenido del modal */
+  padding: 20px;
+  border-radius: 10px;
+}
+.modal div img{
+  max-width: 100% !important;
+}
+
+/* Estilos para el botón de cerrar */
+.modal button {
+  position: absolute;
+  top: 1  5px;
+  right: 25px;
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #761113;
+  padding: 15px; /* Añade un espacio alrededor del botón */
+  /* position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #fff;
+  box-sizing: border-box; */
+}
+.modal-buttons {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 0%;
+  padding: 0%;
+}
+.modal-buttons a {
+  display: inline-block;
+  margin: 0 5px;
+  padding: 10px 20px; /* Espaciado interno de los botones */
+  background-color: #333; /* Color de fondo de los botones */
+  color: #fff; /* Color del texto de los botones */
+  text-decoration: none; /* Quita la subrayado del texto de los botones */
+  border-radius: 5px; /* Bordes redondeados para los botones */
+  transition: background-color 0.3s; /* Transición suave para el cambio de color de fondo */
+}
+
+.modal-buttons a:hover {
+  background-color: #555; /* Cambio de color de fondo al pasar el ratón sobre los botones */
+}

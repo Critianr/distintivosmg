@@ -1,0 +1,217 @@
+/* Inicio mobile */
+.offer{
+    top: 0%;
+    display: block;
+    background-color: #761113;
+    color: #FDDFBA;
+    text-align: center;
+    z-index: 1000;
+    
+  }
+  .offer .text-offer{
+    font-size: 16px;
+    margin: auto;
+    padding: 0;
+    text-align: center;
+  }
+  header{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    z-index: 1000;
+    /* background-color: #ececf0; */
+    background-color: white;
+  }
+  .wrp-header{
+    max-width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 5px;
+    width: 100%;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  .wrp-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .title{
+    text-decoration: none;
+    /* color: #761113; */
+    color: #0D2243; 
+    font-size: 25px;
+    text-align: center;
+    padding: 0;
+  }
+  .wrp-header .wrp-title{
+    
+    margin: 0%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    }
+
+
+
+  .wrp-header .wrp-logo .logo-init{
+    width: 90px;
+    margin: 0;
+    padding: 0;
+  }
+  .wrp-header .wrp-follow img{
+    /* max-width: 50px;
+    align-items: center;
+    align-content: center;
+    justify-content: center; */
+
+  }
+  .wrp-header .wrp-follow{
+     list-style: none;
+}
+.svg-follows-header{
+  display: none;
+}
+.link-header {
+  display: none;
+}
+/* media */
+@media (min-width: 640px) {
+  .offer .text-offer{
+    font-size: 1.40em;
+  }
+  .wrp-logo{
+    justify-content: flex-start;
+  }
+  .title{
+    font-size: 1.60em;
+  }
+  .wrp-follow{
+    display: flex;
+    flex-direction: row;
+    /* text-align: center; */
+    align-items: center;
+  }
+  .svg-follows-header{
+    display: block;
+    width: 45px;
+    padding: 0 5px;
+    
+    }
+
+}
+
+/* FIN DE MOBLE */
+@media (min-width: 720px) {
+  .wrp-header .wrp-title{
+    /* padding-left: 55px; */
+    
+  }
+  .wrp-header .wrp-title .title{
+    font-size: 1.70em;
+  }
+  .wrp-header .wrp-title .title{
+    font-size: 1.125em;
+  }
+  .wrp-header .wrp-follow{
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+  }
+  .wrp-header .wrp-follow .svg-follows-header{
+    display: block;   
+    padding: 0 3px;
+  }
+}
+@media (min-width: 800px) {
+  .title{
+    font-size: 1.50em;
+  }
+  .wrp-header .wrp-follow .svg-follows-header{
+    display: none;
+    padding: 0 3px;
+  }
+  .link-header {
+    display: block ;
+    text-align: center;
+    padding: 0px 5px ;
+  }
+
+}
+@media (min-width: 1024px) {
+  .offer .text-offer{
+    font-size: 1.25em;
+  }
+    header .offer{
+      background-color:#761113 ;
+      color: white;
+      text-align: center;
+    }
+    header{
+    width: 100%;
+    display: block;
+    flex-direction: column;
+    /* position: fixed; */
+    position: absolute;
+    color: black;
+    z-index: 1;
+
+    }
+    .wrp-header{
+      max-width: 100%;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      /* margin-left: 25%; */
+      padding: 10px;
+      box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+      /* z-index: 1;  */
+     }
+  .wrp-header .wrp-logo .title{
+  
+      font-size: 1.80em;
+
+     }
+     .wrp-header .wrp-title span{
+      font-size: 15px;
+
+     }
+     
+     .wrp-header .wrp-follow{
+      /* display: flex;
+      list-style: none; */
+     }
+     .wrp-header .wrp-follow li{
+      padding: 0 5px;
+      /* text-decoration: none;
+      list-style: none; */
+
+     }
+  }
+
+@media (min-width: 1260px) {
+  .offer .text-offer{
+    font-size: 1.40em;
+  }
+  .wrp-header .wrp-logo .title{
+    font-size: 1.70em;
+  }
+}
+
+@media (min-width: 1600px) {
+  .offer .text-offer{
+    font-size: 1.70em;
+  }
+}
+
+@media (min-width: 1920px) {
+  .offer .text-offer{
+    font-size: 1.80em;
+  }
+}

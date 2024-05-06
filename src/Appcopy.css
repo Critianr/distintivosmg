@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: content-box;
+  font-family: "Montserrat", sans-serif;
+}
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  /* padding: 2rem; */
+}
+h2{
+  text-align: center;
+}
+.gallery {
+  padding-top: 100px !important;
+}
+.gallery img{
+  width: 100%;
+  height: auto;
+}
+
+.description{
+  padding: 10px 10px;
+  font-size: 15px;
+  text-align: center;
+
+}
+.wrp-productos h2{
+  text-align: center;
+  }
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 5px;
+  padding: 10px;
+  box-sizing: content-box;
+  /* grid-template-rows: auto auto auto auto; */
+}
+.item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  font-size: 16px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  overflow: hidden; /* Oculta el contenido que desborda del contenedor */
+  /* filter: brightness(70%); */
+}
+.item .item-content{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 100%;
+  max-height: 300px;
+  
+}
+.item .item-content .image-link .img-home{
+object-fit: cover ;
+  /* display: block;
+  height: auto; 
+  max-width: 100%;
+  object-fit: cover; */
+/* max-width: 70%; */
+/* height: 200px; */
+margin: 0%;
+transition: filter 0.3s ease; /* Transición suave para el efecto degradado */
+height: auto; 
+padding: 0;
+
+filter: brightness(70%);
+}
+.item::before {
+  /* content: ""; */
+  position: absolute; /* Lo posiciona absolutamente en relación con el contenedor */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right, #ff7e5f, #feb47b); /* Cambia los colores del degradado según tus preferencias */
+  opacity: 0; /* Inicialmente, el degradado está oculto */
+  transition: opacity 0.3s ease; /* Transición suave para el efecto degradado */
+}
+.item:hover .img-home{
+  opacity: 1; /* Hace visible el degradado al pasar el mouse sobre el elemento */
+  filter: brightness(70%);
+  
+}
+.item:hover .text-content{
+    color: white;
+  
+}
+.text-content{
+
+  position: absolute;
+  bottom: 20px; /* Ajusta la posición vertical según sea necesario */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Centra horizontalmente */
+  text-align: center; /* Alinea el texto al centro */
+  color: black;
+}
+
+.full-width {
+  position: relative;  
+  margin: 0;
+  padding: 15px 10px;
+  overflow: hidden; /* Oculta el contenido que desborda del contenedor */
+}
+
+.full-width .item-content{
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 100%;
+  max-height: 300px;
+  position: relative;
+  /* margin-right: 30px; */
+  
+}
+.full-width:hover .textfull-width{
+  color: white;
+}
+.full-width .img-homefull{
+   /* max-width: 70%; */
+   height: 200px;
+   margin: 0%;
+   transition: filter 0.3s ease; /* Transición suave para el efecto degradado */
+   
+   padding: 0;
+   object-fit: cover; /* Para que la imagen cubra todo el contenedor */
+}
+.full-width .item-contenedor{
+
+  max-width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.full-width .textfull-width {
+  position: absolute;
+  bottom: 20px; /* Ajusta la posición vertical según sea necesario */
+  left: 50%; /* Centra horizontalmente */
+  transform: translateX(-50%); /* Centra horizontalmente */
+  text-align: center; /* Alinea el texto al centro */
+  color: black;
+  /* display: flex;
+  flex-direction: column;
+  text-align: center; */
+  /* align-items: center; */
+  /* justify-content: center; */
+  font-size: 15px;
+  
+  /* padding: 0 5px; */
+}
+.full-width:hover .img-homefull {
+  filter: brightness(70%);
+  color: white;
+ 
+}
+.full-width .textfull-width .item-title{
+  /* text-align: center; */
+  
+}
+.full-width .textfull-width p{
+  /* text-align: center; */
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+/* mobile fin items */
+/* modificacion */
+.wrp-banner{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px 10px;
+}
+.banner-one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px 0px; 
+  /* width: 80%; */
+  
+}
+
+.banner-one .img-banner {
+  padding: 10px 10px;
+  max-width:  100%;
+  height: 300px;
+  object-fit: fill;
+  
+}
+
+.box-content { 
+  text-align: center;
+  /* display: flex; */
+  /* flex: 1; */
+  padding: 0 20px;
+} 
+
+.box-title {
+  font-size: 18px; 
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 10px; /* Add some spacing below the title */
+}
+
+.box-description {
+  line-height: 1.5; /* Add some line spacing for readability */
+}
+.banner-two{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.5);
+  padding: 20px 0px; 
+}
+.banner-two .img-banner{
+  padding: 10px 10px;
+  max-width:  100%;
+  height: 300px;
+  object-fit: fill;
+}
+/* media de los banners */
+
+@media(min-width:600px){
+  .banner-two .img-banner{
+    padding: 10px 10px;
+    max-width:  80%;
+    height: 300px;
+    object-fit: fill;
+  }
+  .banner-one .img-banner {
+    padding: 10px 10px;
+    max-width:  80%;
+    height: 300px;
+    object-fit: fill;
+    
+  }
+}
+@media(min-width:720px){
+  .banner-two .img-banner{
+    padding: 10px 10px;
+    max-width:  300px;
+    height: 300px;
+    object-fit: fill;
+  }
+  .banner-one .img-banner {
+    padding: 10px 10px;
+    max-width:  300px;
+    height: 300px;
+    object-fit: fill;
+    
+  }
+}
+@media(min-width:1024px){
+  .banner-two{
+    flex-direction: row;
+  }
+  .banner-one{
+    flex-direction: row;
+  }
+  .banner-two .img-banner{
+    padding: 10px 10px;
+    max-width:  300px;
+    height: 300px;
+    object-fit: fill;
+  }
+  .banner-one .img-banner {
+    padding: 10px 10px;
+    max-width:  300px;
+    height: 300px;
+    object-fit: fill;
+    
+  }
+}
+@media(min-width:1280px){
+  .box-title { 
+    font-size: 1.25px;
+  }
+  .box-description {
+    font-size: 1.25px;
+  }
+  .banner-two .img-banner{
+    padding: 10px 10px;
+    max-width:  400px;
+    height: 400px;
+    object-fit: fill;
+  }
+  .banner-one .img-banner {
+    padding: 10px 10px;
+    max-width:  400px;
+    height: 400px;
+    object-fit: fill;
+    
+  }
+}
+@media(min-width:1920px){
+  .box-title { 
+    font-size: 1.5px;
+  }
+  .box-description {
+    font-size: 1.5px;
+  }
+}
+/* fin media de los banners */
+
+
+/* DIEÑO DE LAS PAGINAS */
+
+/* Dektop inicio */
+@media(min-width:1024px){
+
+  .gallery{
+    
+    /* padding-top: 120px !important; */
+    box-sizing: content-box;
+  }
+  .wrp-productos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    justify-content: center;
+
+  }
+  .description{
+    font-size: 1em;
+  }
+  .grid-container{
+    justify-items: center;
+    grid-gap: 25px;
+  }
+  .grid-container .item{
+    height: 300px;
+    width: 300px;
+  }
+  
+  .full-item{
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 1000px;
+    max-height: 100%;
+    padding: 25px 0px;
+    /* box-sizing: border-box; */
+  }
+  .full-width{
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    max-height: 400px !important;
+    max-width: 100%;
+    margin: 15px 0;
+    /* padding: 0px 15px; */
+  }
+  .full-width .img-homefull{
+   /* width: 300px;  */
+   height: 250px;
+
+  }
+  .box-title {
+    font-size: 1.50em; /* Adjust font size as needed */
+    font-weight: bold; /* Make the title bold */
+    margin-bottom: 10px; /* Add some spacing below the title */
+  }
+
+}
+
+@media(min-width:1280px){
+  .wrp .gallery .description{
+    font-size: 1.25em;
+  }
+  h2{
+    /* font-size: 1.90em; */
+  }
+  .description{
+    font-size: 1.125em;
+  }
+  
+}
+
+
+
+
+
+
+/* DIEÑO DE LAS PAGINAS */
+.gallery-page{
+  max-width: 100%;
+  padding-top: 120px;
+}
+
+.wrp-pages h2{
+  padding: 20px 0 0 0;
+}
+.wrp-pages p{
+  text-align: justify;
+  padding: 10px 10px;
+}
+.wrp-product{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 1024px) {
+.wrp-product{
+
+
+}
+.gallery-page {
+  /* display: flex;  */
+}
+.gallery-page img{
+  max-width: 100% !important;
+  height: auto;
+}
+.wrp-product{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crea tres columnas de igual tamaño */
+  /* grid-gap: 20px; */
+  align-items: center;
+  cursor: pointer;
+  max-width: 100%;
+  justify-items: center;
+}
+}

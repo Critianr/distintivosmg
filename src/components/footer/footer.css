@@ -1,0 +1,119 @@
+/* inicio vista Moble */
+footer{
+    background-color: #761113;
+    color: #FDDFBA;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+  }
+  .grid-footer .container-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    align-content: center;
+  }
+  footer .grid-footer .logo-footer{
+    width: 100%; /* Haz que las imágenes ocupen todo el ancho del contenedor */
+    max-width: 80px;
+    margin: 0%;
+    padding: 0% ;
+  }
+
+  footer .grid-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dos columnas de tamaño igual */
+    grid-template-rows: auto auto; /* Dos filas de tamaño automático */
+    grid-gap: 5px;
+    margin: 15px;
+  }
+footer .footer-contacto {
+    margin: 0px;
+    padding: 0px;
+    /* font-size: 12px; */
+    text-align: center;
+ }
+ footer .footer-contacto a {
+  color: white;
+ }
+footer .copyright {
+    grid-column: span 2; /* Ocupa dos columnas */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  
+}
+footer .footer-contacto .svg-follows{
+    width: 20px;
+    margin: 4px;
+}
+footer .footer-contacto .footer-text{
+  font-size: 14px;
+  text-align: center;
+  color: wheat;
+  
+}
+/* fin mobile */
+@media (min-width: 1024px) {
+    footer{
+      max-width: 100%;
+      text-align: center;
+    }
+    footer .footer-contacto {
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      padding: 20px;
+    }
+    .grid-footer .container-logo{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      align-content: center;
+}
+.grid-footer .container-logo .logo-footer{
+  max-width: 125px;
+}
+.footer-text{
+  text-align: center;
+  /* font-size: 1em; */
+}
+footer .footer-contacto .svg-follows{
+  width: 30px;
+  margin: 4px;
+}
+.footer-text{
+  font-size: 14px;
+  text-align: center;
+}
+}
+@media (min-width: 1280px) {
+  .footer-text{
+    font-size: 1.125em;
+  }
+  footer .footer-contacto .svg-follows{
+    width: 35px;
+    margin: 4px;
+  } 
+}
+@media (min-width: 1600px) {
+  .footer-text{
+    font-size: 1.25em;
+  }
+  footer .footer-contacto .svg-follows{
+    width: 40px;
+    margin: 4px;
+  } 
+}
+@media (min-width: 1600px) {
+  .footer-text{
+    font-size: 1.25em;
+  }
+  footer .footer-contacto .svg-follows{
+    width: 40px;
+    margin: 4px;
+  } 
+}
