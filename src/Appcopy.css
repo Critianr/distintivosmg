@@ -289,10 +289,10 @@ a{
 }
 @media(min-width:1280px){
   .box-title { 
-    font-size: 1.25px;
+    font-size: 1.25em;
   }
   .box-description {
-    font-size: 1.25px;
+    font-size: 1.25em;
   }
   .banner-two .img-banner{
     padding: 10px 10px;
@@ -310,10 +310,10 @@ a{
 }
 @media(min-width:1920px){
   .box-title { 
-    font-size: 1.5px;
+    font-size: 1.5em;
   }
   .box-description {
-    font-size: 1.5px;
+    font-size: 1.5em;
   }
 }
 /* fin media de los banners */
